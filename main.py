@@ -6,8 +6,8 @@ import os
 app = Flask(__name__)
 
 # ✅ Carga las variables desde el entorno de Render
-BOT_TOKEN = os.getenv("BOT_TOKEN")
-CHAT_ID = os.getenv("CHAT_ID")
+BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
 @app.route('/', methods=['GET'])
 def home():
